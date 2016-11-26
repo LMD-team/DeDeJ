@@ -38,7 +38,8 @@ ol, ul {
 }
 p {
     word-wrap: break-word;
-    word-break: break-all;
+    text-align: justify;
+    /*word-break: break-all;*/
 }
 /*p {
     display: block;
@@ -389,12 +390,23 @@ footer{
 }
 .third {
     display: none;
+    margin-bottom: 20px;
 }
 .active {
     color: #f57800;
 }
-.concept-third, .btnGroup, .imgShow {
+.concept-third, .imgShow {
     height: 50vh;
+}
+.btnGroup {
+    padding-right: 0px;
+    padding-left: 0px;
+    position: fixed;
+    right: 25px;
+    top: 75px;
+}
+.btnGroup button {
+    text-align: right;
 }
 .imgShow {
     position: relative;
