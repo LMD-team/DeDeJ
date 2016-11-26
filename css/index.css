@@ -52,8 +52,10 @@ p {
 /*navigation*/
 .navigationbar {
     background: transparent;
-    border-bottom: 1px solid #ddd;
     height: 60px;
+}
+.border-bottom {
+    border-bottom: 1px solid #ddd;
 }
 
 .modified {
@@ -425,8 +427,15 @@ footer{
     right: 25px;
     top: 75px;
 }
-.btnGroup button {
+.btnGroup .share a {
+    display: none;
+}
+.btnGroup .share:hover a {
+    display: block;
+}
+.btnGroup a {
     text-align: right;
+    display: block;
 }
 .imgShow {
     position: relative;

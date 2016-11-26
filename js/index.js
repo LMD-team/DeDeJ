@@ -13,6 +13,17 @@
 			cursorborder: 0,
 		});
   	
+    // 只有当页面滚动的时候navbar的border-bottom才显示
+    var timeout = false;
+    $(window).scroll( function () {
+        if (timeout) {
+            $('.navigationbar').addClass('border-bottom');
+            clearTimeout(timeout);
+        }
+        timeout = setTimeout(function(){
+            $('.navigationbar').removeClass('border-bottom');
+        },100); 
+    });
   	
 //	hide/show
 
@@ -27,7 +38,7 @@
 			$('.third').show(500);
 		})
 		
-		$('.close').click(function(){
+		$('.close-third').click(function(){
 			$('.third').hide(500);
 		})
 		
