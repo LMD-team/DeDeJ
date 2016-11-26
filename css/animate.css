@@ -2742,3 +2742,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+
+@keyframes itsfade
+{
+  from {
+    background: rgba(255,255,255,0);
+    color: #fff;
+  }
+  to {
+    background: rgba(255,255,255,1);
+    color: #f57800;
+  }
+}
+
+.its-patch:hover .describe{
+  animation: itsfade 1s;
+  background-color: rgba(255,255,255,1);
+  color: #f57800;
+}
