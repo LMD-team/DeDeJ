@@ -1,12 +1,8 @@
 
-  (function(){
+  $(function(){
   	
   	window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
-  	
-  	// 轮播
-    $('#myCarousel').carousel({
-        interval: 3000
-    })
+
 
 
   	var nice = $("html").niceScroll({
@@ -149,7 +145,7 @@
 
 
 
-	})()
+	})
 
 	
 //	function changeImgSize(){ 
