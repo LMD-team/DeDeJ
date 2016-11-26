@@ -176,7 +176,6 @@ p {
 }
 .font-animate {
     position: absolute;
-    left: 15px;
     top: 50%;
     color: #fff;
 }
@@ -900,4 +899,9 @@ tbody tr:nth-last-of-type(1){
 
 .navigationbar:hover{
     background-color: #fff;
+}
+
+#about .font-animate:hover{
+    background-color: #fff;
+    color: #f57800;
 }
