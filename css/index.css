@@ -975,3 +975,36 @@ tbody tr:nth-last-of-type(1){
 .carousel-inner .item img {
     margin: auto;
 }
+
+.new_images1{
+    height:100%;
+    background:url('../images/third-top.png')
+}
+
+.new_images2{
+    height:100%;
+    width:49%;
+    display: inline-block;
+    background:url('../images/mini.png') no-repeat;
+    background-position: center;
+}
+
+.new_images3_left{
+    height:100%;
+    width:49%;
+    background:url('../images/left1_01.png') no-repeat;
+    display: inline-block;
+}
+
+.new_images3_right{
+    height:100%;
+    width:49%;
+    background:url('../images/thirdright.png') no-repeat;
+    display: inline-block;
+    position: relative;
+    left: -7px;
+}
+
+#action .wrapper{
+    margin-bottom: -20px;
+}
