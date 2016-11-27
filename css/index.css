@@ -1008,3 +1008,36 @@ tbody tr:nth-last-of-type(1){
 #action .wrapper{
     margin-bottom: -20px;
 }
+
+#navBar .container-fluid .logo{
+    position: relative;
+}
+
+#navBar .container-fluid .logo+ul{
+    float: right;
+    position: relative;
+    max-width: calc(100% - 150px);
+    overflow: visible;
+    height: 60px;
+}
+
+#navBar .container-fluid .logo+ul li{
+    float: left;
+    padding: 18px 0 16px 18px;
+}
+
+#navBar .container-fluid .logo+ul li:last-child{
+    width: 70px;
+}
+
+#navBar .container-fluid .navbar-nav{
+    margin: 0;
+}
+
+#navBar .container-fluid .navbar-nav .urban .twoLelUl{
+    width: 40px;
+}
+
+#navBar .container-fluid .navbar-nav .urban{
+    width: 60px;
+}
