@@ -3,7 +3,19 @@
   	
   	window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
 
+$('.carousel-indicators-wrap').mousemove(function (e) {
+    if (e.offsetY >= $('#myCarousel').height() * .75) {
+        $('.carousel-indicators-wrap').show();
+        $('.carousel-indicators').slideUp("slow");;
+    }
+    // console.log(e.offsetY, 'y');
+    // console.log($('#myCarousel').height(), 'h')
+})
 
+$('.carousel-indicators-wrap').mouseout(function () {
+    console.log('aaa')
+    $('.carousel-indicators-wrap').slideDown();
+})
 
   	var nice = $("html").niceScroll({
 			cursorborderradius: 0,

@@ -417,9 +417,9 @@ footer{
 .active {
     color: #f57800;
 }
-.concept-third, .imgShow {
+/*.concept-third, .imgShow {
     height: 50vh;
-}
+}*/
 .btnGroup {
     padding-right: 0px;
     padding-left: 0px;
@@ -946,16 +946,32 @@ tbody tr:nth-last-of-type(1){
     color: #f57800;
 }
 
+.carousel-indicators-wrap {
+    height: 20%;
+    /*border: 1px solid #ccc;*/
+    display: block;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.carousel-indicators-wrap:hover .carousel-indicators {
+    display: flex;
+}
+
 .carousel-indicators {
     border: 1px solid black;
-    height: 10vh;
-    display: flex;
+    height: 100%;
+    display: none;
     width: 100%;
     margin-left: 0;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 10000;
 }
 
 .carousel-indicators li,
