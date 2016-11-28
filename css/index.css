@@ -52,7 +52,7 @@ p {
 /*navigation*/
 .navigationbar {
     background: transparent;
-    height: 60px;
+    height: 56px;
 }
 .border-bottom {
     border-bottom: 1px solid #ddd;
@@ -138,7 +138,12 @@ p {
     background: #000;
     border-bottom: 1px solid #ddd;
 }
-
+.pull-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 56px;
+}
 .nav-pills>li>a {
     border-radius: 0px;
     color: #ddd;
@@ -947,7 +952,7 @@ tbody tr:nth-last-of-type(1){
 }
 
 .carousel-indicators-wrap {
-    height: 40%;
+    height: 20%;
     /*border: 1px solid #ccc;*/
     display: block;
     margin-left: 0;
@@ -956,23 +961,26 @@ tbody tr:nth-last-of-type(1){
     right: 0;
     bottom: 0;
     z-index: 999;
-}
-#carousel-show{
-    bottom: -20%;
-}
-#myCarousel{
     overflow: hidden;
 }
+.carousel-indicators li {
+    opacity: .8;
+}
+.carousel-indicators .active {
+    opacity: 1;
+}
+
 .carousel-indicators {
-    border: 1px solid black;
-    height: 50%;
+    /*border: 1px solid black;*/
+    height: 100%;
     display: flex;
     width: 100%;
     margin-left: 0;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -100%;
+    /*top: -100%;*/
     z-index: 10000;
 }
 
@@ -1027,7 +1035,10 @@ tbody tr:nth-last-of-type(1){
     margin-bottom: -20px;
 }
 
-#navBar .container-fluid .logo{
+.container-fluid {
+
+}
+/*#navBar .container-fluid .logo{
     position: relative;
 }
 
@@ -1058,4 +1069,4 @@ tbody tr:nth-last-of-type(1){
 
 #navBar .container-fluid .navbar-nav .urban{
     width: 60px;
-}
+}*/
