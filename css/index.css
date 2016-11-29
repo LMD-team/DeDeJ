@@ -140,7 +140,7 @@ p {
     width: 100%;
     text-align: center;
     background: #000;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }
 .pull-wrap {
     position: fixed;
@@ -1088,6 +1088,10 @@ tbody tr:nth-last-of-type(1){
 
 #map div img{
     width: 100%
+}
+
+.pull ul{
+    border-bottom: 1px solid #ddd;
 }
 /*#navBar .container-fluid .logo{
     position: relative;
