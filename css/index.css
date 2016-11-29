@@ -62,7 +62,11 @@ p {
     background: #000;
     transition: all;
 }
-
+.logo-wrap {
+    height: 56px;
+    width: 100px;
+    display: inline-block;
+}
 .logo {
     width: 100px;
     height: 50px;
@@ -185,6 +189,7 @@ p {
     position: absolute;
     top: 50%;
     color: #fff;
+    left: 15px;
 }
 .button-down {
     bottom: 3%;
@@ -305,6 +310,9 @@ footer{
     float:left;
     cursor:pointer;
 }
+.share a:hover {
+    opacity: .4;
+}
 .addres-wrap .share ul li.o{
     background:url(../images/Share.png) no-repeat 0 0;
     background-size:700%;
@@ -407,7 +415,7 @@ footer{
 }
 .navbar-nav .twoLelUl li {
     cursor: pointer;
-    padding-left: 0;
+    /*padding-left: 0;*/
 }
 .twoLelUl li:hover {
     color: #f57800;
@@ -849,7 +857,42 @@ tbody tr:nth-last-of-type(1){
     100%{-webkit-transform:scale(1.05,1.05);}
 }
 
+@media only screen and (min-width: 992px) {
+    .navbar-nav .twoLelUl li {
+        padding-left: 0px;
+    }
+}
 
+@media only screen and (max-width: 767px) {
+    .navbar-nav .twoLelUl li {
+        /*padding-left: auto;*/
+        text-align: center;
+    }
+    .navbar-nav .urban,
+    .architecture,
+    .landscape {
+        /*width: 33.33%;*/
+        /*position: fixed;*/
+        /*top: 56px;*/
+        text-align: center;
+        float: left;
+    }
+    .navbar-nav .urban {
+        /*left: 0;*/
+        width: 25%;
+    }
+    .architecture {
+        /*left: 25%;*/
+        width: 40%;
+    }
+    .landscape {
+        /*left: 65%;*/
+        width: 35%;
+    }
+    .logo-wrap {
+        width: 90%;
+    }
+}
 
 /*Media Query*/
 @media only screen and (min-width: 100px) and (max-width: 640px) {
