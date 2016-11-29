@@ -214,6 +214,7 @@ p {
 }
 .describe {
     position: absolute;
+    left: 0;
     width: 50%;
     padding: 2%;
     bottom: 0;
@@ -228,6 +229,7 @@ p {
     color: #f57800;
     background-color: rgba(255,255,255,1);
     transition: all 1s;
+    opacity: .9;
 }
 
 /*new*/
@@ -257,7 +259,7 @@ p {
 .font-list:hover {
     color: #f57800;
     transition: all 1s;
-    background: rgba(255,255,255,1); 
+    background: rgba(255,255,255,.9); 
 }
 /*about*/
 .about {
@@ -990,8 +992,8 @@ tbody tr:nth-last-of-type(1){
 }
 
 #about .font-animate:hover{
-    background-color: #fff;
-    color: #f57800;
+    /*background-color: #fff;*/
+    /*color: #f57800;*/
 }
 
 .carousel-indicators-wrap {
