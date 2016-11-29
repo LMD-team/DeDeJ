@@ -1083,6 +1083,14 @@ tbody tr:nth-last-of-type(1){
 .container-fluid {
 
 }
+
+#map div{
+    height: 100%
+}
+
+#map div img{
+    width: 100%
+}
 /*#navBar .container-fluid .logo{
     position: relative;
 }
