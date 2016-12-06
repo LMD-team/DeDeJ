@@ -167,7 +167,7 @@ p {
     height: 16px;
     overflow: hidden;
     position: absolute;
-    left: 1%;
+    left: 40px;
     bottom: 3%;
     z-index: 1;
 }
@@ -189,7 +189,7 @@ p {
     position: absolute;
     top: 50%;
     color: #fff;
-    left: 55px;
+    left: 40px;
 }
 .button-down {
     bottom: 3%;
