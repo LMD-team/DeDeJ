@@ -263,6 +263,9 @@ a:hover, a:focus {
 .active {
 	color: #f57800;
 }
+.nav-pills{
+	border-top: 1px solid #ddd;
+}
 .nav li {
 	width: 100%;
 	text-align: center;
@@ -795,5 +798,5 @@ tbody tr:nth-last-of-type(1){
 	height: 59px;
 }
 .character-hover:hover{
-	background: #fff;
+	background: rgba(255,255,255,0.9);
 }

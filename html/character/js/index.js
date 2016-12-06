@@ -115,7 +115,26 @@
 			offset: 120
 		});
 		wow.init();
-		
+	
+    var judge = true;
+    $('#nav-toggle').click(function(){
+        var a = $('#navBar').css("background-color")
+        console.log(a)
+
+        if(judge){
+            $('#navBar').css("background-color", '#000');
+            $('.navbar-nav li:nth-child(1)').css('display', 'none');
+            $('.navbar-nav li:nth-child(2)').css('display', 'none');
+            $('.navbar-nav li:nth-child(3)').css('display', 'none');
+            judge = !judge;
+        } else{
+            $('#navBar').css("background-color", 'rgba(255,255,255,0)');
+            $('.navbar-nav li:nth-child(1)').css('display', 'block');
+            $('.navbar-nav li:nth-child(2)').css('display', 'block');
+            $('.navbar-nav li:nth-child(3)').css('display', 'block');
+            judge = !judge;
+        }
+    })
 		
 		
 
