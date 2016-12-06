@@ -343,31 +343,54 @@ footer{
 }
 
 /*search.html*/
+.custom-form-control {
+    box-shadow: 0 0 0;
+}
+.custom-form-control:focus {
+    border-color: orange;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
 .search {
     margin-top: 56px;
 }
 .section-title {
     margin-bottom: 50px;
-    letter-spacing: 8px;
+    /*letter-spacing: 8px;*/
 }
 .searchBox {
     padding-bottom: 30px;
     border-bottom: 1px solid #ccc;
 }
 .single-item {
-    /*height: 175px;*/
-    overflow: hidden;
+    height: 175px;
+    /*overflow: hidden;*/
     border-bottom: 1px solid #ccc;
+}
+.single-item div img {
+    margin-top: 21px;
 }
 .name-title {
     font-size: 13px;
     font-weight: 400;
-    margin: 10px 0 5px;
+    margin: 21px 0 5px;
 }
 .test-name {
     font-weight: 700;
     letter-spacing: 1px;
-    margin: 10px 0 10px;
+    margin: 10px 0 25px;
+}
+.searchFont p,
+.test-name {
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    display: -webkit-box;  
+    -webkit-line-clamp: 3;  
+    -webkit-box-orient: vertical;
+    text-justify : auto;
+}
+.test-name {
+    -webkit-line-clamp: 1;  
 }
 .searchFont:hover {
     color: #f57800;
@@ -872,6 +895,12 @@ tbody tr:nth-last-of-type(1){
 @media only screen and (min-width: 992px) {
     .navbar-nav .twoLelUl li {
         padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .single-item {
+        height: 320px;
     }
 }
 
