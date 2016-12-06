@@ -1122,6 +1122,33 @@ tbody tr:nth-last-of-type(1){
     margin: 0;
 }
 
+.btnGroup .close img{
+    width: 21px;
+}
+
+.btnGroup .clearfix .close{
+    margin-bottom: 5px;
+}
+
+.projectContent .wrapper .third{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.navigationbar .row .navbar-nav .landscape {
+        padding-left: 58px;
+        padding-right: 0;
+}
+
+.detailed .wrapper .third{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.navigationbar .news-third .events{
+    padding-left: 58px;
+    padding-right: 0;
+}
 /*#navBar .container-fluid .logo{
     position: relative;
 }
