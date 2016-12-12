@@ -52,7 +52,7 @@ p {
 /*navigation*/
 .navigationbar {
     background: transparent;
-    height: 56px;
+    height: 61px;
 }
 .border-bottom {
     border-bottom: 1px solid #ddd;
@@ -71,6 +71,9 @@ p {
     width: 100px;
 /*    height: 50px;*/
     padding-top: 17px;
+}
+.logo img:hover {
+
 }
 
 #nav-toggle {
@@ -153,6 +156,19 @@ p {
     color: #ddd;
     font-size: 20px;
 }
+.nav-pills li input {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    width: 0px;
+}
+.nav-pills li input:focus {
+    outline: none;
+    color: #fff;
+}
 
 .nav-pills>li>a:hover {
     color: #f57800;
@@ -171,7 +187,7 @@ p {
     bottom: 3%;
     z-index: 1;
 }
-.swiper-pagination-bullet {
+.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
     cursor: pointer;
     width: 2em;
     height: 4px;
@@ -181,6 +197,7 @@ p {
     float: left;
     margin: 0 .5em;
     border-radius: 3px;
+    margin-left: 0px;
 }
 .swiper-pagination-bullet-active {
     background: #f57800;
@@ -1120,7 +1137,7 @@ tbody tr:nth-last-of-type(1){
 }
 
 .container-fluid {
-
+    /*height: 56px;*/
 }
 
 #map div{
@@ -1168,7 +1185,7 @@ tbody tr:nth-last-of-type(1){
 }
 
 .navigationbar .row .navbar-nav .landscape {
-        padding-left: 58px;
+        padding-left: 61px;
         padding-right: 0;
 }
 
@@ -1178,7 +1195,7 @@ tbody tr:nth-last-of-type(1){
 }
 
 .navigationbar .news-third .events{
-    padding-left: 58px;
+    padding-left: 61px;
     padding-right: 0;
 }
 /*#navBar .container-fluid .logo{

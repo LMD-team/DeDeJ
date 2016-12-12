@@ -1,5 +1,19 @@
 
   $(function(){
+
+    $('.nav-search a').mouseenter(function () {
+        // $('.nav-pills li input').show();
+        $('.nav-pills li input').animate({
+            width: "150px"
+        });
+        $('.nav-pills li input').focus();
+    });
+    $('.nav-search input').mouseout(function () {
+        $('.nav-pills li input').animate({
+            width: "0px"
+        });
+        $('.nav-pills li input').blur();
+    });
     
     window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
 

@@ -21,7 +21,7 @@
         <!--navigation-->
         <div class="navigationbar navbar-fixed-top" id="navBar">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row" style="height: 61px;">
                     <div class="col-md-12" style="padding-left: 40px">
                         <a href="#" class="logo pull-left"><img src="images/logo.png" class="img-responsive"/></a>
                         <a id="nav-toggle" class="nav_slide_button pull-right" href="#"><span></span></a>
@@ -31,7 +31,10 @@
             <div class="row">
                 <nav class="pull" style="display: none;">
                     <ul class="nav nav-pills">
-                        <li><a href="html/search.html" class="glyphicon glyphicon-search"></a></li>
+                        <li class="nav-search" style="height: 48px;">
+                            <a style="height: 48px;display: inline-block;" href="html/search.html" class="glyphicon glyphicon-search"></a>
+                            <input type="text">
+                        </li>
                         <li role="presentation"><a href="html/project.html">项目</a></li>
                         <li role="presentation"><a href="html/concept.html">概念</a></li>
                         <li role="presentation"><a href="html/news.html">行动</a></li>
@@ -51,8 +54,10 @@
                         <img src="images/banner.png" class="img-responsive"/>
                         
                         <div class="font-animate">
-                            <h4 data-scroll-reveal="enter bottom after 0.5s">City</h4>
-                            <h1 data-scroll-reveal="enter bottom after 0.7s">Project & News</h1>
+                            <!-- <h4 data-scroll-reveal="enter bottom after 0.5s">City</h4>
+                            <h1 data-scroll-reveal="enter bottom after 0.7s">Project & News</h1> -->
+                            <h4>City</h4>
+                            <h1>Project & News</h1>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -227,7 +232,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/about.png" class="img-responsive"/>
-                        <div class="col-xs-5 font-animate">
+                        <div class="col-xs-5 font-animate" style="padding-left: 0px;">
                             <h5>About</h5>
                             <h1>DeDeJ Architects</h1>
                             <p>We developed a website with lots of animations and all Olympic sports for project for ZH OURO. The spread of this digital product is to present the medals of the winning countries and a comparison with Brazil, the host country of the Olympic Games Rio 2016.</p>
