@@ -26,7 +26,7 @@
                         <a href="../index.html" class="logo pull-left"><img src="../images/logo.png" class="img-responsive"/></a>
                         <ul class="navbar-nav navbar-right">
                             <li class="thirdShow"><a href="#" >ADDRESS</a></li>
-                            <li><a href="#" >CAREERS</a></li>
+                            <li class="careersShow"><a href="#" >CAREERS</a></li>
                             <li><a id="nav-toggle" class="nav_slide_button pull-right" href="#"><span></span></a></li>
                         </ul>  
                     </div>
@@ -73,7 +73,7 @@
                             <p class="marginT">Job seekers will be required to master the use of AUTOCAD, PHOTOSHOP, ILLUSTRATOR, INDESIGN, SKETCHUP, RHINO, 3DSMAX other possible construction tools. Place of work in Beijing.</p>
                         </div>
                     </div>
-                    <div class="row h50">
+                    <div class="row h50 career">
                         <div class="col-xs-6 pull-left">
                             <h3>CAREERS</h3>
                         </div>
@@ -139,4 +139,27 @@
     <script src="../js/jquery.nicescroll.min.js"></script>
     <script src="../js/swiper.jquery.min.js"></script>
     <script src="../js/index.js"></script>
+    <script>
+    var careerShowFlag = false;
+    $('.careersShow').click(function () {
+        if (careerShowFlag) {
+            $('.career').animate({
+                height: '0px'
+            })
+            // $('.career').hide();
+        } else {
+            $('.career').animate({
+                height: '50vh'
+            })
+            // $('.career').show();
+        }
+        careerShowFlag = !careerShowFlag;
+    })
+    $(window).scroll(function () {
+        // $('.career').show();
+            $('.career').animate({
+                height: '50vh'
+            })
+    })
+    </script>
 </html>

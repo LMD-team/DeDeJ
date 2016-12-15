@@ -52,6 +52,18 @@
         });
     
     // 只有当页面滚动的时候navbar的border-bottom才显示
+    var timeout = false;
+    $(window).scroll( function () {
+        if (timeout) {
+            $('.navigationbar').addClass('border-opacity');
+            clearTimeout(timeout);
+        }
+        timeout = setTimeout(function(){
+            $('.navigationbar').removeClass('border-opacity');
+        },100); 
+    });
+    
+    // 只有当页面滚动的时候navbar的border-bottom才显示
     // var timeout = false;
     // $(window).scroll( function () {
     //     if (timeout) {
@@ -64,7 +76,7 @@
     // });
     
 // 暂时在所有navigationbar下面显示一条白线
-    $('.navigationbar').addClass('border-bottom');
+    // $('.navigationbar').addClass('border-bottom');
 //  hide/show
 
         $('.nav_slide_button').click(function() {
