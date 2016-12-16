@@ -555,7 +555,8 @@ footer{
 }
 
 .concept-warp .describe {
-    width: 100%;
+    width: 50%;
+    height: 50%;
     background: transparent;
 }
 .concept-warp .describe h3 {
@@ -1205,7 +1206,7 @@ tbody tr:nth-last-of-type(1){
 }
 
 .btnGroup .clearfix .close{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .projectContent .wrapper .third{
