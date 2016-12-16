@@ -22,11 +22,11 @@
         <div class="navigationbar navbar-fixed-top" id="navBar">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="padding-left: 40px">
                         <a href="../index.html" class="logo pull-left"><img src="../images/logo.png" class="img-responsive"/></a>
                         <ul class="navbar-nav navbar-right">
+                            <li class="careersShow"><a href="javascript:;" >CAREERS</a></li>
                             <li class="thirdShow"><a href="#" >ADDRESS</a></li>
-                            <li class="careersShow"><a href="#" >CAREERS</a></li>
                             <li><a id="nav-toggle" class="nav_slide_button pull-right" href="#"><span></span></a></li>
                         </ul>  
                     </div>
@@ -51,7 +51,7 @@
             </div>      
         </div>
         
-        <section class="contact-wrap">
+        <section class="contact-wrap" style="margin-top: 61px;">
             <div class="wrapper">
                 <div class="container">
                     <div class="row" style="padding: 20px 0;">
@@ -86,8 +86,8 @@
                                     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                                 </li>
                                 <li class="file">
-                                    Upload your CV
-                                    <input type="file" name="" id="" value="Upload your CV" />
+                                    Upload your CV(≤5MB)
+                                    <input type="file" name="" id="" value="Upload your CV(≤5MB)" />
                                 </li>
                                 <li><button>SEND</button></li>
                             </ul>
@@ -146,20 +146,22 @@
             $('.career').animate({
                 height: '0px'
             })
-            // $('.career').hide();
         } else {
             $('.career').animate({
                 height: '50vh'
             })
-            // $('.career').show();
         }
         careerShowFlag = !careerShowFlag;
     })
-    $(window).scroll(function () {
-        // $('.career').show();
-            $('.career').animate({
-                height: '50vh'
-            })
-    })
+    // 为了实现下滑的时候也出现careers
+    // $(window).scroll(function () {
+    //     // $('.career').show();
+    //     if (!careerShowFlag) {
+    //         $('.career').animate({
+    //             height: '50vh'
+    //         })
+    //         careerShowFlag = true;
+    //     }
+    // })
     </script>
 </html>
